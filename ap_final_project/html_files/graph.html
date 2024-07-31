@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph Visualization</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #F0F4F8; /* Light blue-gray */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #mynetwork {
+            width: 90%;
+            height: 90%;
+            border: 2px solid #4CAF50; /* Green */
+            border-radius: 15px;
+            background-color: #FAF3E0; /* Light yellow */
+        }
+    </style>
+    <!-- Include vis.js library from CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="mynetwork"></div>
+<script>
+    const nodes = new vis.DataSet([
+        // Nodes will be inserted here by Java code
+    ]);
+
+    const edges = new vis.DataSet([
+        // Edges will be inserted here by Java code
+    ]);
+
+    const container = document.getElementById('mynetwork');
+    const data = {
+        nodes: nodes,
+        edges: edges
+    };
+    const options = {
+        nodes: {
+            shape: 'ellipse',
+            size: 30,
+            font: {
+                size: 18,
+                color: '#343434' /* Dark gray */
+            },
+            color: {
+                border: '#4CAF50', /* Green */
+                background: '#A5D6A7', /* Light green */
+                highlight: {
+                    border: '#388E3C', /* Dark green */
+                    background: '#C8E6C9' /* Very light green */
+                }
+            },
+            scaling: {
+                min: 16,
+                max: 40
+            }
+        },
+        edges: {
+            arrows: 'to',
+            color: {
+                color: '#FFCDD2', /* Light Red */
+                highlight: '#D32F2F' /* Red */
+            },
+            width: 2,
+            font: {
+                align: 'middle',
+                color: '#8E24AA', /* Purple */
+                size: 20
+            },
+            smooth: true
+        },
+        physics: {
+            enabled: true,
+            barnesHut: {
+                gravitationalConstant: -8000,
+                centralGravity: 0.3,
+                springLength: 200,
+                springConstant: 0.04,
+                damping: 0.09
+            }
+        }
+    };
+    const network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>

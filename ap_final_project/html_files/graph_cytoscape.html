@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph Visualization</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #F5F5F5; /* Light gray */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #mynetwork {
+            width: 90%;
+            height: 90%;
+            border: 2px solid #008080; /* Teal */
+            border-radius: 15px;
+            background-color: #FAEBD7; /* Antique white */
+        }
+    </style>
+    <!-- Include Cytoscape.js library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.1/cytoscape.min.js"></script>
+</head>
+<body>
+<div id="mynetwork"></div>
+<script>
+    const elements = [
+        {data: { id: 'A', label: 'A' }},{data: { id: 'PlusAgent', label: 'PlusAgent' }},{data: { id: 'B', label: 'B' }},{data: { id: 'C', label: 'C' }},{data: { id: 'IncAgent', label: 'IncAgent' }},{data: { id: 'D', label: 'D' }},{data: {id: 'A-PlusAgent', source: 'A', target: 'PlusAgent' }},{data: {id: 'PlusAgent-C', source: 'PlusAgent', target: 'C' }},{data: {id: 'B-PlusAgent', source: 'B', target: 'PlusAgent' }},{data: {id: 'C-IncAgent', source: 'C', target: 'IncAgent' }},{data: {id: 'IncAgent-D', source: 'IncAgent', target: 'D' }}
+    ];
+
+    try {
+        console.log('Elements:', elements);
+        const cy = cytoscape({
+        container: document.getElementById('mynetwork'),
+        elements: elements,
+        style: [
+            {
+                selector: 'node',
+                style: {
+                    'background-color': '#008080', // Teal
+                    'label': 'data(label)',
+                    'font-size': '12px',
+                    'text-valign': 'center',
+                    'color': '#000'
+                }
+            },
+            {
+                selector: 'edge',
+                style: {
+                    'width': 2,
+                    'line-color': '#DD3344', // Dark red
+                    'target-arrow-color': '#DD3344', // Dark red
+                    'target-arrow-shape': 'triangle'
+                }
+            }
+        ],
+        layout: {
+            name: 'grid',
+            rows: 2
+        }
+    });
+    } catch(error) {
+    console.error('Error rendering graph:', error);
+
+    }
+
+</script>
+</body>
+</html>

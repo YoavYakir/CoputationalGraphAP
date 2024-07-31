@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Graph Creator</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      padding: 20px;
+      margin: 0;
+      background-color: #F5F5F5; /* Light gray */
+      display: flex;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+    .frame-container {
+      margin: 15px;
+      border: 2px solid #008080; /* Teal */
+      border-radius: 15px;
+      background-color: #FAEBD7; /* Antique white */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .left-frame {
+      flex: 2.5; /* 25% width */
+    }
+    .center-frame {
+      flex: 7; /* 70% width */
+    }
+    .right-frame {
+      flex: 2.5; /* 25% width */
+    }
+  </style>
+
+  <link rel="icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+<!-- Left frame for displaying forms -->
+<div class="frame-container left-frame">
+  <iframe src="form.html"></iframe>
+</div>
+
+<!-- Center frame for displaying the graph -->
+<div class="frame-container center-frame">
+  <iframe src="temp.html"></iframe>
+</div>
+
+<!-- Right frame for displaying the table -->
+<div class="frame-container right-frame">
+  <iframe src="table.html"></iframe>
+</div>
+</body>
+</html>

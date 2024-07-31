@@ -1,0 +1,6 @@
+# Ignore on root directory
+movie.mp4
+slides.pdf
+# ignore uneeded files
+/ap_final_project/config_files
+/ap_final_project/out
