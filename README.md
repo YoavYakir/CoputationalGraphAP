@@ -1,8 +1,9 @@
-# Java HTTP Server with Agent-Topic Graph Visualization
+# Java HTTP Server with Computational Graph Visualization
 
 ## Project Overview
 
-This project implements a Java-based HTTP server that allows users to upload configurations for agents and the topics they subscribe to and publish. The server provides a graphical interface that visualizes the relationships between agents and topics, representing them with different shapes. Additionally, the server supports publishing messages to topics, where agents subscribed to those topics can receive the messages, perform calculations, and publish results to their subscribed topics.
+This project implements a Java-based HTTP server that allows users to upload configurations for agents and the topics they subscribe to and allowed to publish to. The server provides a GUI that visualizes the relationships between agents and topics, representing them with different shapes. Additionally, the application supports publishing messages to topics, where agents subscribed to those topics can receive the messages, perform calculations, and publish results to their subscribed topics.
+Once the desired agent-topic calculation was completed, it is possible to download the results into a csv file.
 
 ## Features
 
@@ -12,6 +13,7 @@ This project implements a Java-based HTTP server that allows users to upload con
     - Publish messages to specific topics.
     - Agents subscribed to these topics can receive messages, perform calculations, and publish the results.
 - **Topic Monitoring**: A UI table displaying topics and the latest messages published to them.
+- **Export data**: A download button that exports a csv of the current graph.
 
 ## Getting Started
 
@@ -26,7 +28,7 @@ This project implements a Java-based HTTP server that allows users to upload con
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/jonathantoaf/advanced_programming.git
+   git clone https://github.com/YoavYakir/CoputationalGraphAP.git
 
 2. **Open the Project in an IDE**
 
@@ -84,15 +86,15 @@ D
 
 ### Initial Interface
 
-![Initial Interface](ap_final_project/screenshots/1.png)
+<img width="959" alt="Landing Page Layout" src="https://github.com/user-attachments/assets/d9522aa1-4d39-4839-8990-8eab35b21f49">
 
 ### After Uploading Configuration
 
-![Graph Visualization](ap_final_project/screenshots/2.png)
+<img width="959" alt="Configuration is deployed" src="https://github.com/user-attachments/assets/8b6caf43-ddfa-4df3-84e6-b9f94a64293b">
 
 ### After Publishing Messages
 
-![Topic Table](ap_final_project/screenshots/3.png)
+<img width="959" alt="Calculation Net is completed" src="https://github.com/user-attachments/assets/943cc2f8-5b8e-4b08-bc06-5ecaa43a56a9">
 
 ## Project Structure
 
