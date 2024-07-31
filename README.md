@@ -84,15 +84,15 @@ D
 
 ### Initial Interface
 
-![Initial Interface](ap_final_project/screenshots/1.png)
+![Initial Interface](ap_final_project/screenshots/Landing Page Layout.png)
 
 ### After Uploading Configuration
 
-![Graph Visualization](ap_final_project/screenshots/2.png)
+![Graph Visualization](ap_final_project/screenshots/Configuration is deployed.png)
 
 ### After Publishing Messages
 
-![Topic Table](ap_final_project/screenshots/3.png)
+![Topic Table](ap_final_project/screenshots/Calculation Net is completed.png)
 
 ## Project Structure
 
