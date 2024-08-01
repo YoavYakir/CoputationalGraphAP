@@ -36,14 +36,14 @@ Once the desired agent-topic calculation was completed, it is possible to downlo
 - **Eclipse**:
     - Download and install Eclipse from [here](https://www.eclipse.org/downloads/).
     - Open Eclipse and go to `File > Open Projects from File System`.
-    - Browse to the `advanced_programming` directory and click `Finish` to import the project.
+    - Browse to the `ap_final_project` directory and click `Finish` to import the project.
     - Navigate to the `src` directory and locate the `Main.java` file.
     - Right-click on `Main.java` and select `Run As > Java Application`.
 
 - **IntelliJ IDEA**:
     - Download and install IntelliJ IDEA from [here](https://www.jetbrains.com/idea/).
     - Open IntelliJ IDEA and select `Open` from the welcome screen.
-    - Navigate to the `advanced_programming` directory and open it.
+    - Navigate to the `ap_final_project` directory and open it.
     - IntelliJ IDEA will configure the project.
     - Locate the `Main.java` file in the `src` directory.
     - Right-click on `Main.java` and select `Run 'Main'`.
