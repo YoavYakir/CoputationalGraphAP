@@ -63,7 +63,7 @@ configs.IncAgent
 C
 D
 ```
-
+For more advanced configs check 'the ap_final_project/example_conf_files' directory
 ### Usage
 
 1. **Access the UI**
