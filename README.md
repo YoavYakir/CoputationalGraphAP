@@ -9,6 +9,7 @@ Once the desired agent-topic calculation was completed, it is possible to downlo
 
 - **Agent-Topic Configuration**: Upload configurations to define agents and the topics they subscribe to and publish.
 - **Graph Visualization**: A dynamic graphical UI that displays agents and topics with distinct shapes (e.g., rectangular for topics and circular for agents).
+                           The graph component supports drag-and-pull, zoom. Nodes can be clicked the highlight inbound and outbound edges.
 - **Message Publishing and Processing**:
     - Publish messages to specific topics.
     - Agents subscribed to these topics can receive messages, perform calculations, and publish the results.
